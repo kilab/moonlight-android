@@ -118,6 +118,8 @@ public class PreferenceConfiguration {
     public static final String RES_1080P = "1920x1080";
     public static final String RES_1440P = "2560x1440";
     public static final String RES_4K = "3840x2160";
+    public static final String RES_UWS_1080P = "3840x1080";
+    public static final String RES_UWS_1440P = "5120x1440";
     public static final String RES_NATIVE = "Native";
 
     public int width, height, fps;
@@ -220,6 +222,12 @@ public class PreferenceConfiguration {
         }
         else if (resString.equalsIgnoreCase("4K")) {
             return RES_4K;
+        }
+        else if (resString.equalsIgnoreCase("Ultra-Wide-1080p")) {
+            return RES_UWS_1080P;
+        }
+        else if (resString.equalsIgnoreCase("Ultra-Wide-1440p")) {
+            return RES_UWS_1440P;
         }
         else {
             // Should be unreachable
@@ -494,6 +502,26 @@ public class PreferenceConfiguration {
             else if (str.equals("4K60")) {
                 config.width = 3840;
                 config.height = 2160;
+                config.fps = 60;
+            }
+            else if (str.equals("Ultra-Wide-1080p30")) {
+                config.width = 3840;
+                config.height = 1080;
+                config.fps = 30;
+            }
+            else if (str.equals("Ultra-Wide1080p60")) {
+                config.width = 3840;
+                config.height = 1080;
+                config.fps = 60;
+            }
+            else if (str.equals("Ultra-Wide-1440p30")) {
+                config.width = 5120;
+                config.height = 1440;
+                config.fps = 30;
+            }
+            else if (str.equals("Ultra-Wide1440p60")) {
+                config.width = 5120;
+                config.height = 1440;
                 config.fps = 60;
             }
             else {

@@ -271,6 +271,8 @@
     <string name="resolution_1080p">1080p</string>
     <string name="resolution_1440p">1440p</string>
     <string name="resolution_4k">4K</string>
+    <string name="resolution_uws_1080p">Ultra-Wide-1080p</string>
+    <string name="resolution_uws_1440p">Ultra-Wide-1440p</string>
 
     <string name="fps_30">30 FPS</string>
     <string name="fps_60">60 FPS</string>
